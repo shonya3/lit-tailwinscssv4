@@ -1,6 +1,6 @@
 import { LitElement, html, TemplateResult } from 'lit';
 import { customElement } from 'lit/decorators.js';
-import { wind } from './styles/wind';
+import { tailwind } from './styles/tailwind/tailwind';
 
 @customElement('red-text')
 export class RedTextElement extends LitElement {
@@ -8,7 +8,7 @@ export class RedTextElement extends LitElement {
 		return html`<p class="text-red-600"><slot></slot></p> `;
 	}
 
-	static styles = [wind];
+	static styles = [tailwind];
 }
 
 declare global {
