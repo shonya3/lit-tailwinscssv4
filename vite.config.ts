@@ -13,7 +13,7 @@ function web_components_tailwind(): Plugin {
 	return {
 		name: 'web_components_tailwind',
 		transform(code, id) {
-			if (!id.includes('tailwind_styles_root.css?inline')) {
+			if (!id.includes('tailwind-styles-root.css?inline')) {
 				return;
 			}
 			const propertyRegex = /@property\s+[^{]+\{[^}]+\}/gs;
