@@ -1,2 +1,3 @@
-import './tailwind-at-properties.css';
-import './elements/red-text.ts';
+import './tailwind/at-properties.css';
+import './elements/text-red';
+import './elements/ring-indigo';
